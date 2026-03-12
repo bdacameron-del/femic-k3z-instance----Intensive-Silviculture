@@ -37,6 +37,33 @@ Species Code Note (PL vs PLC)
 - Do not interpret missing/absent ``PL`` account boxes as a model failure for
   this instance; treat ``PLC`` as the operative lodgepole-pine series signal.
 
+Expected-Empty Account Matrix
+-----------------------------
+
+.. list-table::
+   :header-rows: 1
+
+   * - Account pattern
+     - Expected state in K3Z
+   * - ``product.Yield.managed.PLC``
+     - present + nonzero
+   * - ``product.HarvestedVolume.managed.PLC.CC``
+     - present + nonzero
+   * - ``product.Yield.managed.PL``
+     - absent
+   * - ``product.HarvestedVolume.managed.PL.CC``
+     - absent
+
+Validation checklist:
+
+1. ``femic instance account-surface`` returns no
+   ``total OK, species-wise empty`` diagnosis.
+2. ``femic instance rebuild --with-patchworks`` passes fatal species policy
+   invariants.
+3. Latest matrix manifest confirms
+   ``accounts_sync.excluded_patterns`` includes ``\.PL(\.|$)``.
+
+
 Discussion
 ----------
 
