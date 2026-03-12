@@ -23,9 +23,33 @@ Symptoms:
 
 Actions:
 
-1. Confirm species-proportion source data exists in bundle tables.
-2. Rebuild ForestModel XML and tracks.
-3. Inspect rebuild report for invariant failures and baseline diffs.
+1. Run account-surface diagnostics and capture JSON evidence:
+
+   .. code-block:: bash
+
+      python -m femic instance account-surface \
+        --config config/patchworks.runtime.windows.yaml \
+        --output vdyp_io/logs/account_surface-<run_id>.json \
+        --instance-root .
+
+2. If diagnostics reports ``total OK, species-wise empty``:
+   - inspect ``tracks/products.csv`` + ``tracks/curves.csv`` for nonzero
+     species label signal;
+   - inspect matrix manifest ``accounts_sync.excluded_patterns`` for accidental
+     over-filtering.
+3. Re-run deterministic rebuild with Patchworks enabled:
+
+   .. code-block:: bash
+
+      python -m femic instance rebuild \
+        --spec config/rebuild.spec.yaml \
+        --with-patchworks \
+        --instance-root .
+
+4. Confirm species policy invariants pass in rebuild report:
+   ``required_present``, ``expected_absent``, ``required_nonzero``,
+   ``expected_zero``.
+5. If needed, compare report baseline diff output before changing allowlist.
 
 Patchworks Runtime Preflight Fails
 ----------------------------------
