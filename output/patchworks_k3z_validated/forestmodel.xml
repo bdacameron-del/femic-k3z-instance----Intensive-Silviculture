@@ -86941,6 +86941,7 @@
   <define field="AU" column="AU" />
   <define field="IFM" column="IFM" />
   <define field="ORIGIN" column="ORIGIN" />
+  <define field="RETENTION" column="Number(column('RETENTION'))" />
   <define field="treatment" />
   <input block="BLOCK" area="AREA_HA" age="F_AGE" exclude="BLOCK=0" />
   <output messages="messages.csv" blocks="blocks.csv" features="features.csv" products="products.csv" treatments="treatments.csv" curves="curves.csv" tracknames="tracknames.csv" />
@@ -87048,6 +87049,9 @@
         <curve idref="au_985501000_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="58" maxage="1000">
         <produce>
@@ -87221,6 +87225,9 @@
         <curve idref="au_985501000_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="58" maxage="1000">
         <produce>
@@ -87391,6 +87398,9 @@
         <curve idref="au_985501001_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="94" maxage="1000">
         <produce>
@@ -87564,6 +87574,9 @@
         <curve idref="au_985501001_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="94" maxage="1000">
         <produce>
@@ -87734,6 +87747,9 @@
         <curve idref="au_985501002_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="86" maxage="1000">
         <produce>
@@ -87895,6 +87911,9 @@
         <curve idref="au_985501002_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="86" maxage="1000">
         <produce>
@@ -88056,6 +88075,9 @@
         <curve idref="au_985501003_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="90" maxage="1000">
         <produce>
@@ -88229,6 +88251,9 @@
         <curve idref="au_985501003_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="90" maxage="1000">
         <produce>
@@ -88399,6 +88424,9 @@
         <curve idref="au_985501004_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="42" maxage="1000">
         <produce>
@@ -88560,6 +88588,9 @@
         <curve idref="au_985501004_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="42" maxage="1000">
         <produce>
@@ -88721,6 +88752,9 @@
         <curve idref="au_985501005_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="79" maxage="1000">
         <produce>
@@ -88882,6 +88916,9 @@
         <curve idref="au_985501005_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="79" maxage="1000">
         <produce>
@@ -89055,6 +89092,9 @@
         <curve idref="au_985501006_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="99" maxage="1000">
         <produce>
@@ -89237,6 +89277,9 @@
         <curve idref="au_985501006_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="99" maxage="1000">
         <produce>
@@ -89407,6 +89450,9 @@
         <curve idref="au_985501007_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="87" maxage="1000">
         <produce>
@@ -89568,6 +89614,9 @@
         <curve idref="au_985501007_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="87" maxage="1000">
         <produce>
@@ -89753,6 +89802,9 @@
         <curve idref="au_985501008_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="88" maxage="1000">
         <produce>
@@ -89956,6 +90008,9 @@
         <curve idref="au_985501008_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="88" maxage="1000">
         <produce>
@@ -90135,6 +90190,9 @@
         <curve idref="au_985502000_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="79" maxage="1000">
         <produce>
@@ -90296,6 +90354,9 @@
         <curve idref="au_985502000_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="79" maxage="1000">
         <produce>
@@ -90457,6 +90518,9 @@
         <curve idref="au_985502001_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="58" maxage="1000">
         <produce>
@@ -90630,6 +90694,9 @@
         <curve idref="au_985502001_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="58" maxage="1000">
         <produce>
@@ -90800,6 +90867,9 @@
         <curve idref="au_985502002_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="62" maxage="1000">
         <produce>
@@ -90973,6 +91043,9 @@
         <curve idref="au_985502002_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="62" maxage="1000">
         <produce>
@@ -91143,6 +91216,9 @@
         <curve idref="au_985502003_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="82" maxage="1000">
         <produce>
@@ -91316,6 +91392,9 @@
         <curve idref="au_985502003_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="82" maxage="1000">
         <produce>
@@ -91486,6 +91565,9 @@
         <curve idref="au_985502004_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="30" maxage="1000">
         <produce>
@@ -91659,6 +91741,9 @@
         <curve idref="au_985502004_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="30" maxage="1000">
         <produce>
@@ -91829,6 +91914,9 @@
         <curve idref="au_985502005_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="58" maxage="1000">
         <produce>
@@ -92002,6 +92090,9 @@
         <curve idref="au_985502005_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="58" maxage="1000">
         <produce>
@@ -92184,6 +92275,9 @@
         <curve idref="au_985502006_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="74" maxage="1000">
         <produce>
@@ -92366,6 +92460,9 @@
         <curve idref="au_985502006_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="74" maxage="1000">
         <produce>
@@ -92536,6 +92633,9 @@
         <curve idref="au_985502007_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="66" maxage="1000">
         <produce>
@@ -92709,6 +92809,9 @@
         <curve idref="au_985502007_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="66" maxage="1000">
         <produce>
@@ -92903,6 +93006,9 @@
         <curve idref="au_985502008_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="66" maxage="1000">
         <produce>
@@ -93094,6 +93200,9 @@
         <curve idref="au_985502008_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="66" maxage="1000">
         <produce>
@@ -93264,6 +93373,9 @@
         <curve idref="au_985503000_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="58" maxage="1000">
         <produce>
@@ -93437,6 +93549,9 @@
         <curve idref="au_985503000_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="58" maxage="1000">
         <produce>
@@ -93607,6 +93722,9 @@
         <curve idref="au_985503001_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="54" maxage="1000">
         <produce>
@@ -93780,6 +93898,9 @@
         <curve idref="au_985503001_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="54" maxage="1000">
         <produce>
@@ -93950,6 +94071,9 @@
         <curve idref="au_985503002_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="86" maxage="1000">
         <produce>
@@ -94111,6 +94235,9 @@
         <curve idref="au_985503002_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="86" maxage="1000">
         <produce>
@@ -94272,6 +94399,9 @@
         <curve idref="au_985503003_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="78" maxage="1000">
         <produce>
@@ -94445,6 +94575,9 @@
         <curve idref="au_985503003_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="78" maxage="1000">
         <produce>
@@ -94615,6 +94748,9 @@
         <curve idref="au_985503004_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="42" maxage="1000">
         <produce>
@@ -94776,6 +94912,9 @@
         <curve idref="au_985503004_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="42" maxage="1000">
         <produce>
@@ -94937,6 +95076,9 @@
         <curve idref="au_985503005_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="79" maxage="1000">
         <produce>
@@ -95098,6 +95240,9 @@
         <curve idref="au_985503005_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="79" maxage="1000">
         <produce>
@@ -95271,6 +95416,9 @@
         <curve idref="au_985503006_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="99" maxage="1000">
         <produce>
@@ -95453,6 +95601,9 @@
         <curve idref="au_985503006_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="99" maxage="1000">
         <produce>
@@ -95623,6 +95774,9 @@
         <curve idref="au_985503007_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="87" maxage="1000">
         <produce>
@@ -95784,6 +95938,9 @@
         <curve idref="au_985503007_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="87" maxage="1000">
         <produce>
@@ -95969,6 +96126,9 @@
         <curve idref="au_985503008_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="88" maxage="1000">
         <produce>
@@ -96172,6 +96332,9 @@
         <curve idref="au_985503008_seral_overmature" />
       </attribute>
     </features>
+    <retention factor="RETENTION">
+      <assign field="IFM" value="'unmanaged'" />
+    </retention>
     <track>
       <treatment label="CC" minage="88" maxage="1000">
         <produce>
