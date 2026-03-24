@@ -55,6 +55,10 @@ Actions:
 PCT->CT Variant Shows Total Managed Yield But Species Accounts Are Missing
 --------------------------------------------------------------------------
 
+This is a regression playbook, not the expected current K3Z ``pctct`` state.
+The checked-in ``pctct`` surface should retain species-wise managed yield /
+harvest-volume accounts alongside the ``PCT -> CT`` treatment path.
+
 Symptoms:
 
 - ``pctct`` launches and treatment products look correct, but managed
