@@ -139,6 +139,9 @@ from the managed side of a subvariant, the corresponding managed species
 account can disappear from that subvariant's compiled tracks and live Patchworks
 account view.
 
+For the repeatable student/operator workflow, use
+:doc:`overlay-subvariants-workflow`.
+
 Audit Checklist
 ---------------
 

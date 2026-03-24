@@ -86,5 +86,6 @@ Deep references
 ---------------
 
 - launch matrix and overlay provenance: :doc:`variants-and-subvariants`
+- repeatable overlay student/operator workflow: :doc:`overlay-subvariants-workflow`
 - treatment parameter tables and state machines: :doc:`silviculture-logic`
 - old-growth semantics: :doc:`old-growth-attributes`

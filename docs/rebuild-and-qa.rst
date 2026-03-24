@@ -137,6 +137,9 @@ Baseline Overlay Subvariant QA
 
 These checks apply only to the four baseline-derived overlay subvariants.
 
+For the source contract, subvariant meaning map, and repeatable launch
+workflow, use :doc:`overlay-subvariants-workflow`.
+
 Variant command pattern:
 
 .. code-block:: bash
@@ -153,4 +156,7 @@ Variant-specific expectations:
 - higher-retention overlays can legitimately drop some managed species
   accounts if that species no longer appears on the managed side.
 
-Deep reference: :doc:`variants-and-subvariants`
+Deep references:
+
+- :doc:`variants-and-subvariants`
+- :doc:`overlay-subvariants-workflow`

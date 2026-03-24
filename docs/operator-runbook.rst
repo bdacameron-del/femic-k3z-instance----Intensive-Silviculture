@@ -128,6 +128,9 @@ Baseline Overlay Subvariant Workflow
 Use these only when the exercise is specifically about alternative retained
 area on top of the accepted baseline surface.
 
+Use :doc:`overlay-subvariants-workflow` as the canonical source for the source
+contract, subvariant meanings, and audit expectations.
+
 .. code-block:: bash
 
    femic patchworks matrix-build --config config/patchworks.runtime.overlay.basecase_riparian.windows.yaml --run-id k3z_overlay_basecase_riparian
@@ -144,7 +147,10 @@ Review points:
 - confirm any missing managed species accounts are consistent with high
   retained area, not with a bad tracks surface.
 
-Deep reference: :doc:`variants-and-subvariants`
+Deep references:
+
+- :doc:`variants-and-subvariants`
+- :doc:`overlay-subvariants-workflow`
 
 Old-Growth Review Workflow
 --------------------------

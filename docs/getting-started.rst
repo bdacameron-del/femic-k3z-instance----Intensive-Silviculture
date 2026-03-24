@@ -32,6 +32,8 @@ Baseline-derived overlay subvariants:
 - ``scenario1_sum``
 - ``scenario2_sum``
 
+For the repeatable overlay workflow, use :doc:`overlay-subvariants-workflow`.
+
 Students should choose a variant by config/PIN, not by switching git branches.
 
 The intended launch pairings are:
@@ -154,7 +156,9 @@ Baseline overlay subvariants:
 - ``config/patchworks.runtime.overlay.basecase_sum.windows.yaml``
 - ``config/patchworks.runtime.overlay.scenario1_sum.windows.yaml``
 - ``config/patchworks.runtime.overlay.scenario2_sum.windows.yaml``
-- deep reference: :doc:`variants-and-subvariants`
+- deep references:
+  - :doc:`variants-and-subvariants`
+  - :doc:`overlay-subvariants-workflow`
 
 Authoritative Paths
 -------------------

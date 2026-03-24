@@ -10,6 +10,7 @@ This documentation site is the standalone operator guide for the
 
    getting-started
    variants-and-subvariants
+   overlay-subvariants-workflow
    silviculture-logic
    old-growth-attributes
    model-anatomy
