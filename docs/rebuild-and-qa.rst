@@ -80,35 +80,31 @@ Validate against baseline:
 Optional CT/Fert Variant QA
 ---------------------------
 
-These checks apply only to the CT/fert variant
-(``config/patchworks.variant.ctfert.yaml``, ``analysis/ctfert.pin``).
+These checks apply only to the shipped CT/fert SI-profile subvariants
+(``ctfert_l15h5`` and ``ctfert_l20h0``).
 
 Variant command pattern:
 
 .. code-block:: bash
 
-   femic patchworks matrix-build --config config/patchworks.runtime.ctfert.windows.yaml --run-id k3z_ctfert
+   femic patchworks matrix-build --config config/patchworks.runtime.ctfert_l15h5.windows.yaml --run-id k3z_ctfert_l15h5
+   femic patchworks matrix-build --config config/patchworks.runtime.ctfert_l20h0.windows.yaml --run-id k3z_ctfert_l20h0
 
 Variant-specific expectations:
 
-- ``tracks_ctfert/treatments.csv`` includes ``CT``, ``F1``, ``F2``, and
-  ``F3``.
-- ``tracks_ctfert/accounts.csv`` includes the matching
-  ``product.Treated.managed.*`` surfaces.
-- ``tracks_ctfert/products.csv`` includes the matching treated-product
-  surfaces.
 - ``SILV_STATE``-specific tracknames/strata materialize for the CT/fert
   sequence.
-- The accepted CT/fert fragments surface preserves the baseline 218-fragment
-  geometry footprint exactly.
-- CT/fert fragment differences are limited to the low-yield AUs ``985502006``
-  and ``985502008``, where 9 fragments are retained out of THLB via
-  ``RETENTION = 1.0``.
-- Refresh the CT/fert ForestModel from canonical bundle/checkpoint inputs, but
-  do not replace the checked-in CT/fert fragments surface blindly with raw
-  export fragments unless the baseline-footprint invariants still hold.
 - Live Patchworks smoke should show that pulling on a minimum ``F3``
   treated-area target induces upstream ``F2`` -> ``F1`` -> ``CT`` -> ``CC``.
+- For ``ctfert_l15h5`` and ``ctfert_l20h0``, confirm the accepted validated
+  fragments surfaces preserve the curated 218-fragment geometry footprint from
+  ``tmp/CTFert Fragments/fragments_updated3_Usedinbasecase.shp`` exactly, and
+  therefore replace the old uniform ``RETENTION = 0.05`` placeholder with the
+  student-provided per-fragment values.
+- For ``ctfert_l15h5``, confirm the six eligible ``L/M/H`` AUs all materialize
+  the ``CT -> F1 -> F2 -> F3`` path.
+- For ``ctfert_l20h0``, confirm the two ``H``-class AUs still materialize CT
+  but do not compile any ``F1`` / ``F2`` / ``F3`` path.
 
 Deep reference: :doc:`silviculture-logic`
 

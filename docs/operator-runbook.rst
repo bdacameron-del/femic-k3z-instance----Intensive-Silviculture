@@ -67,8 +67,10 @@ Surface Selection Cheatsheet
      - Launch this
    * - accepted teaching baseline
      - ``config/patchworks.runtime.windows.yaml`` + ``analysis/base.pin``
-   * - CT plus fertilization
-     - ``config/patchworks.runtime.ctfert.windows.yaml`` + ``analysis/ctfert.pin``
+   * - CT plus fertilization with SI profile ``L15/M10/H5``
+     - ``config/patchworks.runtime.ctfert_l15h5.windows.yaml`` + ``analysis/ctfert_l15h5.pin``
+   * - CT plus fertilization with SI profile ``L20/M10/H0``
+     - ``config/patchworks.runtime.ctfert_l20h0.windows.yaml`` + ``analysis/ctfert_l20h0.pin``
    * - light PCT-only surface
      - ``config/patchworks.runtime.pct_light.windows.yaml`` + ``analysis/pct_light.pin``
    * - moderate PCT-only surface
@@ -81,22 +83,33 @@ Surface Selection Cheatsheet
 Optional CT/Fert Variant Workflow
 ---------------------------------
 
-Use this only if you intentionally want the teaching variant with commercial
-thinning, provisional QMD, and provisional ``F1`` / ``F2`` / ``F3``
+Use this only if you intentionally want one of the teaching surfaces with
+commercial thinning, approximate QMD, and ``F1`` / ``F2`` / ``F3``
 fertilization.
 
 .. code-block:: bash
 
-   femic patchworks matrix-build --config config/patchworks.runtime.ctfert.windows.yaml --run-id k3z_ctfert
+   femic patchworks matrix-build --config config/patchworks.runtime.ctfert_l15h5.windows.yaml --run-id k3z_ctfert_l15h5
+   femic patchworks matrix-build --config config/patchworks.runtime.ctfert_l20h0.windows.yaml --run-id k3z_ctfert_l20h0
 
 Variant review points:
 
-- ``config/patchworks.variant.ctfert.yaml`` is the variant spec.
-- ``config/silviculture.k3z.ctfert.yaml`` controls the optional treatment scaffold.
-- ``models/k3z_patchworks_model/analysis/ctfert.pin`` is the Patchworks launch entrypoint.
-- ``models/k3z_patchworks_model/tracks_ctfert/treatments.csv`` should materialize ``CT``, ``F1``, ``F2``, and ``F3``.
-- ``models/k3z_patchworks_model/tracks_ctfert/accounts.csv`` / ``products.csv`` should include
-  ``product.Treated.managed.{CT,F1,F2,F3}``.
+- ``config/patchworks.variant.ctfert_l15h5.yaml`` and
+  ``config/patchworks.variant.ctfert_l20h0.yaml`` are the SI-profile
+  subvariant specs.
+- ``models/k3z_patchworks_model/analysis/ctfert_l15h5.pin`` and
+  ``models/k3z_patchworks_model/analysis/ctfert_l20h0.pin`` are the
+  Patchworks launch entrypoints for those SI-profiled surfaces.
+- ``tracks_ctfert_l15h5`` should compile ``CT`` plus ``F1`` / ``F2`` / ``F3``
+  across the six eligible ``L/M/H`` AUs with boosts ``L=15%``, ``M=10%``,
+  ``H=5%``.
+- ``tracks_ctfert_l20h0`` should compile CT across the same six AUs but
+  materialize ``F1`` / ``F2`` / ``F3`` only on the ``L/M`` cohort.
+- The two SI-profiled subvariants should use the curated retention overlay in
+  ``tmp/CTFert Fragments/fragments_updated3_Usedinbasecase.shp`` rather than
+  the old uniform ``RETENTION = 0.05`` placeholder. In other words, the
+  checked-in validated fragments now carry the student-provided per-fragment
+  ``RETENTION`` values, not the previous placeholder values.
 - Patchworks smoke expectation: pulling on the ``F3`` treated-area target should
   induce the upstream chain ``F2`` -> ``F1`` -> ``CT`` -> ``CC``.
 - Deep reference: :doc:`silviculture-logic`
@@ -191,8 +204,9 @@ Troubleshooting Workflow
 1. Preflight failure: fix runtime paths/license prerequisites first.
 2. Block join mismatch: rebuild blocks and rerun matrix builder.
 3. Account anomalies: trace curves -> attributes/products -> accounts.
-4. Optional variant anomalies: confirm you launched the intended PIN/runtime pair and that
-   ``config/silviculture.k3z.ctfert.yaml`` matches the expected treatment-path build.
+4. Optional variant anomalies: confirm you launched the intended PIN/runtime
+   pair and that the matching ``config/silviculture.k3z.ctfert*.yaml`` file
+   matches the expected treatment-path build.
 5. On the selected ``pct_*`` subvariant, confirm the matching
    ``config/silviculture.k3z.pct_*.yaml`` matches the expected treatment-path
    build and that the corresponding ``tracks_pct_*`` surface is active.
@@ -204,8 +218,10 @@ Release Checklist
 - Invariant report passes baseline checks.
 - Required docs pages and contract tests pass.
 - Published docs navigation resolves and includes current pages.
-- If releasing the optional CT/fert variant, confirm the variant spec, runtime config,
-  and ``ctfert.pin`` launch instructions are documented for student groups.
+- If releasing the optional CT/fert variant family, confirm the
+  ``ctfert_l15h5`` / ``ctfert_l20h0`` subvariants have documented variant
+  specs, runtime configs, curated ``RETENTION`` provenance, and launch
+  instructions for student groups.
 - If releasing the optional PCT-only subvariants, confirm the light/moderate/
   heavy variant specs, runtime configs, and ``pct_*.pin`` launch
   instructions are documented for student groups.

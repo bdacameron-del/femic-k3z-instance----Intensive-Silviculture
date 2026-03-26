@@ -34,7 +34,7 @@ sourceRelative("../scripts/targets/seralStages.bsh");
 /*
  * Locate the input matrix data files
  */
-String tracks_path_prefix = "../tracks_ctfert/";
+String tracks_path_prefix = "../tracks_ctfert_l20h0/";
 
 blocks = tracks_path_prefix+"blocks.csv";
 curves = tracks_path_prefix+"curves.csv";
