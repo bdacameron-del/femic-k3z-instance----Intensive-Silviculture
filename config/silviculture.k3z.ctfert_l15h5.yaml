@@ -4,20 +4,49 @@ commercial_thinning:
   from_state: "cc_pl"
   to_state: "cc_pl_ct"
   eligible_au_ids:
+    - 985501001  # FDC+HW-L
     - 985502001  # FDC+HW-M
+    - 985503001  # FDC+HW-H
+    - 985501002  # CW+HW-L
     - 985502002  # CW+HW-M
+    - 985503002  # CW+HW-H
   min_origin: "planted"
   age_by_au:
+    985501001: 40
     985502001: 40
+    985503001: 40
+    985501002: 40
     985502002: 40
+    985503002: 40
   basal_area_removal_fraction: 0.30
   basal_area_to_volume_ratio: 1.0
+  final_felling_gap_factor: 0.0
 
 fertilization:
   enabled: true
   state_field: "SILV_STATE"
   response_years: 10
-  growth_speedup_fraction: 0.10
+  eligible_au_ids:
+    - 985501001  # FDC+HW-L
+    - 985502001  # FDC+HW-M
+    - 985503001  # FDC+HW-H
+    - 985501002  # CW+HW-L
+    - 985502002  # CW+HW-M
+    - 985503002  # CW+HW-H
+  growth_speedup_fraction_by_au:
+    985501001: 0.15
+    985502001: 0.10
+    985503001: 0.05
+    985501002: 0.15
+    985502002: 0.10
+    985503002: 0.05
+  qmd_response_fraction_by_au:
+    985501001: 0.15
+    985502001: 0.10
+    985503001: 0.05
+    985501002: 0.15
+    985502002: 0.10
+    985503002: 0.05
   first_application:
     from_state: "cc_pl_ct"
     to_state: "cc_pl_ct_f1"
@@ -35,8 +64,6 @@ fertilization:
 
 qmd:
   enabled: true
-  source: "synthetic"
-  notes: "Placeholder AU-wise QMD curves for CT/fert scaffolding until observed or Nemora-derived curves are supplied."
 
 retention:
   default_retention_fraction: 0.05

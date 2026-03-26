@@ -53,7 +53,8 @@ pull it.
 Recommended workflow:
 
 1. Start from a clean, accepted ``main`` baseline.
-2. If your group needs CT/fert, use the CT/fert variant spec and launch ``analysis/ctfert.pin``.
+2. If your group needs SI-specific CT/fert behavior, launch either
+   ``analysis/ctfert_l15h5.pin`` or ``analysis/ctfert_l20h0.pin``.
 3. If your group needs the PCT-only teaching scaffold, choose one of
    ``pct_light``, ``pct_moderate``, or ``pct_heavy`` and launch the
    matching ``analysis/pct_*.pin`` surface.
@@ -80,8 +81,9 @@ How to Validate Reruns
 1. Confirm matrix-build manifest success.
 2. Confirm rebuild report invariants pass.
 3. Confirm scenario deltas are explainable by intentional config edits.
-4. On the optional variant, confirm compiled tracks and live Patchworks behavior
-   agree about the ``CT`` -> ``F1`` -> ``F2`` -> ``F3`` chain.
+4. On the selected CT/fert surface, confirm compiled tracks and live Patchworks
+   behavior agree about the intended ``CT`` -> ``F1`` -> ``F2`` -> ``F3`` chain,
+   or CT-only behavior on ``H`` AUs for ``ctfert_l20h0``.
 5. On the selected ``pct_*`` subvariant, confirm compiled tracks and live
    Patchworks behavior agree about the ``PCT`` -> ``CC`` chain.
 6. On overlay subvariants, confirm the only intended behavioral change is the
