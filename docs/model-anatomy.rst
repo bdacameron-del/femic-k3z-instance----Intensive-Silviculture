@@ -24,6 +24,10 @@ Safe to edit directly:
 - ``config/seral.k3z.yaml``
 - ``config/tipsy/tsak3z.yaml``
 - ``config/silviculture.k3z.ctfert.yaml`` for the optional CT/fert variant
+- ``config/silviculture.k3z.ctfert_l15h5.yaml`` for the optional CT/fert
+  ``L15/M10/H5`` subvariant
+- ``config/silviculture.k3z.ctfert_l20h0.yaml`` for the optional CT/fert
+  ``L20/M10/H0`` subvariant
 - ``config/silviculture.k3z.pct_light.yaml`` for the optional light PCT-only subvariant
 - ``config/silviculture.k3z.pct_moderate.yaml`` for the optional moderate PCT-only subvariant
 - ``config/silviculture.k3z.pct_heavy.yaml`` for the optional heavy PCT-only subvariant
@@ -100,6 +104,9 @@ Additional state/config artifacts for that variant:
 
 - fragment/XML state field: ``SILV_STATE``
 - silviculture config: ``config/silviculture.k3z.ctfert.yaml``
+- silviculture configs for the SI-profiled CT/fert subvariants:
+  - ``config/silviculture.k3z.ctfert_l15h5.yaml``
+  - ``config/silviculture.k3z.ctfert_l20h0.yaml``
 - provisional QMD outputs:
   - ``feature.QMD.managed.<au_token>``
   - ``feature.QMD.unmanaged.<au_token>``
@@ -113,13 +120,20 @@ Additional state/config artifacts for that variant:
 
 Optional treatment surfaces for that variant:
 
-- ``CT`` commercial thinning on two initial eligible AUs
+- ``CT`` commercial thinning on the configured eligible AU cohort
 - ``F1`` / ``F2`` / ``F3`` fertilization chain after CT
 - matching compiled treatment products/accounts such as:
   - ``product.Treated.managed.CT``
   - ``product.Treated.managed.F1``
   - ``product.Treated.managed.F2``
   - ``product.Treated.managed.F3``
+
+The SI-profiled CT/fert subvariants extend that same state machine across the
+six ``L/M/H`` SI-class ``CWHvm_FDC+HW`` / ``CWHvm_CW+HW`` AUs, but change the
+fert response by SI class:
+
+- ``ctfert_l15h5``: ``L=15%``, ``M=10%``, ``H=5%``
+- ``ctfert_l20h0``: ``L=20%``, ``M=10%``, and no fert on ``H`` AUs
 
 In this variant, ``ORIGIN`` still means natural vs planted. Treatment history is
 carried by ``SILV_STATE`` instead of overloading ``ORIGIN``.

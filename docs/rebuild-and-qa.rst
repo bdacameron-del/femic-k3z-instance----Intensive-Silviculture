@@ -88,6 +88,8 @@ Variant command pattern:
 .. code-block:: bash
 
    femic patchworks matrix-build --config config/patchworks.runtime.ctfert.windows.yaml --run-id k3z_ctfert
+   femic patchworks matrix-build --config config/patchworks.runtime.ctfert_l15h5.windows.yaml --run-id k3z_ctfert_l15h5
+   femic patchworks matrix-build --config config/patchworks.runtime.ctfert_l20h0.windows.yaml --run-id k3z_ctfert_l20h0
 
 Variant-specific expectations:
 
@@ -109,6 +111,13 @@ Variant-specific expectations:
   export fragments unless the baseline-footprint invariants still hold.
 - Live Patchworks smoke should show that pulling on a minimum ``F3``
   treated-area target induces upstream ``F2`` -> ``F1`` -> ``CT`` -> ``CC``.
+- For ``ctfert_l15h5`` and ``ctfert_l20h0``, confirm the accepted validated
+  fragments surfaces preserve the curated 218-fragment geometry footprint from
+  ``tmp/CTFert Fragments/fragments_updated3_Usedinbasecase.shp`` exactly.
+- For ``ctfert_l15h5``, confirm the six eligible ``L/M/H`` AUs all materialize
+  the ``CT -> F1 -> F2 -> F3`` path.
+- For ``ctfert_l20h0``, confirm the two ``H``-class AUs still materialize CT
+  but do not compile any ``F1`` / ``F2`` / ``F3`` path.
 
 Deep reference: :doc:`silviculture-logic`
 

@@ -27,13 +27,17 @@ Gate Summary
 - ``IFM`` still separates managed vs unmanaged land-base behavior; unmanaged
   tracks do not enter the intensive treatment chains.
 
-CT/Fert Variant
----------------
+CT/Fert Variant Family
+----------------------
 
 Canonical control files:
 
 - ``config/patchworks.variant.ctfert.yaml``
 - ``config/silviculture.k3z.ctfert.yaml``
+- ``config/patchworks.variant.ctfert_l15h5.yaml`` +
+  ``config/silviculture.k3z.ctfert_l15h5.yaml``
+- ``config/patchworks.variant.ctfert_l20h0.yaml`` +
+  ``config/silviculture.k3z.ctfert_l20h0.yaml``
 
 Treatment parameter table:
 
@@ -44,6 +48,10 @@ Treatment parameter table:
      - Current implementation
    * - Eligible AUs
      - ``985502001`` and ``985502002``
+   * - SI-profiled CT/fert subvariants
+     - ``ctfert_l15h5`` and ``ctfert_l20h0``
+   * - SI-profiled eligible AUs
+     - ``985501001``, ``985502001``, ``985503001``, ``985501002``, ``985502002``, and ``985503002``
    * - Eligibility gate
      - planted-only path (``min_origin: planted``)
    * - State transition field
@@ -66,8 +74,20 @@ Treatment parameter table:
      - ``response_years = 10``
    * - Fert growth speedup
      - ``growth_speedup_fraction = 0.10``
+   * - SI-profiled fert growth speedup
+     - ``ctfert_l15h5`` = ``L=0.15``, ``M=0.10``, ``H=0.05``; ``ctfert_l20h0`` = ``L=0.20``, ``M=0.10``, and no fert on ``H`` AUs
    * - QMD source
      - synthetic placeholder
+
+SI-profile notes:
+
+1. ``ctfert_l15h5`` keeps the full ``CT -> F1 -> F2 -> F3`` chain on all six
+   eligible ``L/M/H`` AUs.
+2. ``ctfert_l20h0`` keeps CT on all six eligible ``L/M/H`` AUs but disables
+   fertilization entirely on the two ``H``-class AUs instead of compiling a
+   null-effect fert chain there.
+3. Both SI-profile subvariants use the curated CT/fert retention overlay in
+   ``tmp/CTFert Fragments/fragments_updated3_Usedinbasecase.shp``.
 
 Sequencing logic:
 
@@ -137,7 +157,7 @@ Sequencing logic:
 State Machines
 --------------
 
-``ctfert`` states:
+``ctfert`` / ``ctfert_l15h5`` / ``ctfert_l20h0`` states:
 
 - ``baseline``
 - ``cc_pl``
@@ -155,8 +175,11 @@ State Machines
 Interpretation Notes
 --------------------
 
-- Use ``ctfert`` when the teaching question is about compounded treatment
-  sequencing and fertilization response.
+- Use ``ctfert`` when the teaching question is about the original two-AU
+  compounded treatment scaffold.
+- Use ``ctfert_l15h5`` or ``ctfert_l20h0`` when the teaching question is about
+  SI-specific fertilization response differences across the six eligible
+  ``CWHvm_FDC+HW`` / ``CWHvm_CW+HW`` AUs.
 - Use ``pct_light`` / ``pct_moderate`` / ``pct_heavy`` when the teaching
   question is about comparing PCT intensity on an otherwise consistent
   planted stand-tending path.
