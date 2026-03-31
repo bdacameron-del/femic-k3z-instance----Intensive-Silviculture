@@ -213,6 +213,14 @@ _MANAGED_,product.HarvestedVolume.managed.HW.CC,product.HarvestedVolume.managed.
 _MANAGED_,product.HarvestedVolume.managed.PLC.CC,product.HarvestedVolume.managed.PLC.CC,0.85
 _MANAGED_,product.HarvestedVolume.managed.Total.CC,product.HarvestedVolume.managed.Total.CC,0.85
 _MANAGED_,product.HarvestedVolume.managed.YC.CC,product.HarvestedVolume.managed.YC.CC,0.85
+_MANAGED_,product.Logs_Grade_D.managed.Total.CC,product.Logs_Grade_D.managed.Total.CC,0.85
+_MANAGED_,product.Logs_Grade_F.managed.Total.CC,product.Logs_Grade_F.managed.Total.CC,0.85
+_MANAGED_,product.Logs_Grade_H.managed.Total.CC,product.Logs_Grade_H.managed.Total.CC,0.85
+_MANAGED_,product.Logs_Grade_I.managed.Total.CC,product.Logs_Grade_I.managed.Total.CC,0.85
+_MANAGED_,product.Logs_Grade_J.managed.Total.CC,product.Logs_Grade_J.managed.Total.CC,0.85
+_MANAGED_,product.Logs_Grade_U.managed.Total.CC,product.Logs_Grade_U.managed.Total.CC,0.85
+_MANAGED_,product.Logs_Grade_X.managed.Total.CC,product.Logs_Grade_X.managed.Total.CC,0.85
+_MANAGED_,product.Logs_Grade_Y.managed.Total.CC,product.Logs_Grade_Y.managed.Total.CC,0.85
 _MANAGED_,product.QMDNumerator.managed.CWHvm_CW_HW_M.CC,product.QMDNumerator.managed.CWHvm_CW_HW_M.CC,1
 _MANAGED_,product.QMDNumerator.managed.CWHvm_CW_PLC_M.CC,product.QMDNumerator.managed.CWHvm_CW_PLC_M.CC,1
 _MANAGED_,product.QMDNumerator.managed.CWHvm_CW_YC_M.CC,product.QMDNumerator.managed.CWHvm_CW_YC_M.CC,1

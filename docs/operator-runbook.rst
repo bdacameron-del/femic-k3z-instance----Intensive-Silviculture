@@ -155,6 +155,18 @@ Variant review points:
 - The CT/fert tracks now expose AU-wise harvested-stem QMD numerator rows:
   - ``product.QMDNumerator.managed.<au_token>.CC``
   - ``product.QMDNumerator.managed.<au_token>.CT`` on the CT-eligible AUs
+- The CT/fert tracks now expose normalized explicit BTC log-grade harvested
+  products on both ``CC`` and ``CT`` treatment surfaces:
+  ``product.Logs_Grade_{D,F,H,I,J,U,X,Y}.managed.Total.{CC,CT}``.
+- ``Logs_Grade_All`` is intentionally excluded from the shipped additive family
+  because it behaves like a separate scaled-log metric rather than the additive
+  parent of the explicit grades.
+- The explicit grades are compiled so they sum to the corresponding
+  ``product.HarvestedVolume.*`` account instead of raw BTC merchantable yield.
+- The current ``CT`` recipe intentionally biases the mix toward lower-grade
+  ``J/U/X/Y`` material to reflect early-age thinning from below. This is a
+  teaching-instance bridge between forest-growth and product-outturn logic, not
+  a claim that FEMIC directly observes CT log grades in primary BTC output.
 - The CT/fert tracks also expose AU-wise standing stems-per-ha feature rows:
   - ``feature.StemsPerHa.managed.<au_token>``
   - ``feature.StemsPerHa.unmanaged.<au_token>``
