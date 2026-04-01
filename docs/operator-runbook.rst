@@ -489,6 +489,13 @@ Troubleshooting Workflow
    - ``product.Logs_Grade_Value_Total.managed.PLC.CC``
    - ``product.Logs_Grade_Value_Total.managed.YC.CC``
    - ``product.Logs_Grade_Value_Total.managed.Total.CC``
+7. On ``pct_heavy_zones``, the default account surface also includes the
+   carried-forward zone overlay accounts from the archived Bianca fork:
+   ``zone1harvestvol``, ``zone2harvestvol``, ``zone3harvestvol``,
+   ``zone1inventoryarea``, ``zone2inventoryarea``, ``zone3inventoryarea``,
+   ``zone1inventoryvol``, ``zone2inventoryvol``, ``zone3inventoryvol``,
+   ``zone1og1CW_HW``, ``zone1og1HW_CW_H``, ``zone1og1HW_CW_L``,
+   ``zone1og1HW_CW_M``, and ``zone3PCT``.
 
 Release Checklist
 -----------------

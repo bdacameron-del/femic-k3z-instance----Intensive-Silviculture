@@ -284,6 +284,38 @@ Interpretation:
 These accounts are intended as the easy-entry student surface. Turn on the full
 log-grade account family only when you want the AU/species/log-grade detail.
 
+`pct_heavy_zones` Legacy Zone Accounts
+--------------------------------------
+
+The zoned sibling variant also carries a small legacy zone-account overlay
+ported from the archived Bianca fork. These accounts are keyed by the
+``zone1`` / ``zone2`` / ``zone3`` tags loaded from ``groups.csv`` and are now
+present in both the full and default account surfaces.
+
+Shipped overlay accounts:
+
+- harvest volume:
+  - ``zone1harvestvol``
+  - ``zone2harvestvol``
+  - ``zone3harvestvol``
+- managed inventory:
+  - ``zone1inventoryarea``
+  - ``zone2inventoryarea``
+  - ``zone3inventoryarea``
+  - ``zone1inventoryvol``
+  - ``zone2inventoryvol``
+  - ``zone3inventoryvol``
+- selected old-growth teaching checks:
+  - ``zone1og1CW_HW``
+  - ``zone1og1HW_CW_H``
+  - ``zone1og1HW_CW_L``
+  - ``zone1og1HW_CW_M``
+- treatment check:
+  - ``zone3PCT``
+
+These are deliberately narrow legacy overlay accounts. They sit alongside the
+newer FEMIC-generated log-grade value rollups rather than replacing them.
+
 Audit Checklist
 ---------------
 

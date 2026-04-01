@@ -11,6 +11,7 @@ MODEL_ROOT = REPO_ROOT / "models" / "k3z_patchworks_model"
 SOURCE_TRACKS = MODEL_ROOT / "tracks_pct_heavy"
 TARGET_TRACKS = MODEL_ROOT / "tracks_pct_heavy_zones"
 GROUPS_SOURCE = SOURCE_TRACKS / "groups_zones.csv"
+ZONE_ACCOUNTS_OVERLAY = REPO_ROOT / "config" / "pct_heavy_zones.accounts_overlay.csv"
 LOG_GRADE_VALUE_RE = re.compile(
     r"^product\.Logs_Grade_Value_[A-Z]+\.managed\.(?P<au>[^.]+)\.(?P<species>[^.]+)\.(?P<event>[^.]+)$"
 )
@@ -72,6 +73,34 @@ def append_revenue_rollups(accounts_path: Path, products_path: Path) -> None:
         writer.writerows(account_rows + additions)
 
 
+def append_zone_overlay(accounts_path: Path, overlay_path: Path) -> None:
+    if not overlay_path.is_file():
+        raise FileNotFoundError(f"Missing zone-accounts overlay: {overlay_path}")
+
+    with accounts_path.open("r", encoding="utf-8", newline="") as handle:
+        account_rows = list(csv.DictReader(handle))
+    with overlay_path.open("r", encoding="utf-8", newline="") as handle:
+        overlay_rows = list(csv.DictReader(handle))
+
+    existing = {
+        (row["GROUP"], row["ATTRIBUTE"], row["ACCOUNT"], row["SUM"]) for row in account_rows
+    }
+    additions = []
+    for row in overlay_rows:
+        key = (row["GROUP"], row["ATTRIBUTE"], row["ACCOUNT"], row["SUM"])
+        if key not in existing:
+            additions.append(row)
+            existing.add(key)
+
+    if not additions:
+        return
+
+    with accounts_path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=["GROUP", "ATTRIBUTE", "ACCOUNT", "SUM"])
+        writer.writeheader()
+        writer.writerows(account_rows + additions)
+
+
 def main() -> None:
     if not SOURCE_TRACKS.is_dir():
         raise FileNotFoundError(f"Missing source tracks directory: {SOURCE_TRACKS}")
@@ -85,6 +114,8 @@ def main() -> None:
     products_path = TARGET_TRACKS / "products.csv"
     append_revenue_rollups(TARGET_TRACKS / "accounts.csv", products_path)
     append_revenue_rollups(TARGET_TRACKS / "accounts.default.csv", products_path)
+    append_zone_overlay(TARGET_TRACKS / "accounts.csv", ZONE_ACCOUNTS_OVERLAY)
+    append_zone_overlay(TARGET_TRACKS / "accounts.default.csv", ZONE_ACCOUNTS_OVERLAY)
     print(f"Refreshed {TARGET_TRACKS} from {SOURCE_TRACKS} with {GROUPS_SOURCE.name}")
 
 

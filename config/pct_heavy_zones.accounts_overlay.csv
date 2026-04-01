@@ -1,0 +1,15 @@
+GROUP,ATTRIBUTE,ACCOUNT,SUM
+zone1,product.Yield.managed.Total,zone1harvestvol,1
+zone2,product.Yield.managed.Total,zone2harvestvol,1
+zone3,product.Yield.managed.Total,zone3harvestvol,1
+zone1,feature.Area.managed,zone1inventoryarea,1
+zone2,feature.Area.managed,zone2inventoryarea,1
+zone3,feature.Area.managed,zone3inventoryarea,1
+zone1,feature.Yield.managed.Total,zone1inventoryvol,1
+zone2,feature.Yield.managed.Total,zone2inventoryvol,1
+zone3,feature.Yield.managed.Total,zone3inventoryvol,1
+zone1,feature.Area.og1.CWHvm_CW_HW_M,zone1og1CW_HW,1
+zone1,feature.Area.og1.CWHvm_HW_CW_H,zone1og1HW_CW_H,1
+zone1,feature.Area.og1.CWHvm_HW_CW_L,zone1og1HW_CW_L,1
+zone1,feature.Area.og1.CWHvm_HW_CW_M,zone1og1HW_CW_M,1
+zone3,product.Treated.managed.PCT,zone3PCT,1
