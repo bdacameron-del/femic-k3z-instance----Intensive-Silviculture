@@ -243,6 +243,12 @@ Variant review points:
   - silviculture config: ``config/silviculture.k3z.pct_heavy.yaml``
   - launch entrypoint: ``models/k3z_patchworks_model/analysis/pct_heavy.pin``
   - tracks surface: ``models/k3z_patchworks_model/tracks_pct_heavy/``
+- `pct_heavy_zones`:
+  - variant spec: ``config/patchworks.variant.pct_heavy_zones.yaml``
+  - silviculture config: ``config/silviculture.k3z.pct_heavy.yaml``
+  - launch entrypoint: ``models/k3z_patchworks_model/analysis/pct_heavy_zones.pin``
+  - tracks surface: ``models/k3z_patchworks_model/tracks_pct_heavy_zones/``
+  - note: this sibling surface reuses the validated heavy-PCT ForestModel and fragments, but swaps in Bianca's alternate ``groups_zones.csv`` grouping
 - Each ``tracks_pct_*`` surface should materialize ``PCT`` and not ``CT``.
 - Each ``tracks_pct_*`` ``accounts.csv`` / ``products.csv`` should include
   ``product.Treated.managed.PCT`` and exclude ``product.Treated.managed.CT``.

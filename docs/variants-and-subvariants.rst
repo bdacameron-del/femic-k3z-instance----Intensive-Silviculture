@@ -47,6 +47,9 @@ Quick Launch Selector
    * - "What changes if we apply heavy PCT at age 10?"
      - ``pct_heavy``
      - ``config/patchworks.runtime.pct_heavy.windows.yaml`` + ``analysis/pct_heavy.pin``
+   * - "What changes if heavy PCT keeps the same treatments but uses the Bianca zone groups surface?"
+     - ``pct_heavy_zones``
+     - ``config/patchworks.runtime.pct_heavy_zones.windows.yaml`` + ``analysis/pct_heavy_zones.pin``
    * - "What does the first optional BTC stand-structure bank look like in a safe proving ground?"
      - ``intensive_light_standstructure``
      - ``config/patchworks.runtime.intensive_light_standstructure.windows.yaml`` + ``analysis/intensive_light_standstructure.pin``
@@ -120,6 +123,12 @@ Variant Matrix
      - Adds ``SILV_STATE`` plus a planted-only heavy PCT gate, no CT or fertilization chain, and uses the tracked student thinners ``RETENTION`` overlay instead of the old uniform ``0.05`` placeholder.
      - ``PCT`` treated products, AU-wise standing height, AU-wise standing stems-per-ha, AU-wise harvested-stem QMD numerator / treated-area / live ratio accounts for both ``PCT`` and ``CC``, plus species-wise managed yield / harvest-volume surfaces.
      - Heavy-intensity stand-tending teaching scaffold.
+   * - ``pct_heavy_zones``
+     - ``config/patchworks.runtime.pct_heavy_zones.windows.yaml`` + ``analysis/pct_heavy_zones.pin``
+     - ``tracks_pct_heavy_zones/`` + ``output/patchworks_k3z_pct_heavy_validated/forestmodel.xml`` + ``output/patchworks_k3z_pct_heavy_validated/fragments/fragments.shp``
+     - Reuses the validated heavy-PCT ForestModel and fragments surfaces, but swaps the uniform ``groups.csv`` assignment for Bianca's alternate ``groups_zones.csv`` grouping surface.
+     - The same heavy-PCT treated products/accounts as ``pct_heavy``, but with zone-based group assignments available in Patchworks reports and UI grouping.
+     - Heavy-PCT teaching scaffold with alternate zone-grouping for comparison.
    * - ``intensive_light_standstructure``
      - ``config/patchworks.runtime.intensive_light_standstructure.windows.yaml`` + ``analysis/intensive_light_standstructure.pin``
      - ``tracks_intensive_light_standstructure/`` + ``output/patchworks_k3z_intensive_light_standstructure_validated/forestmodel.xml`` + ``output/patchworks_k3z_intensive_light_standstructure_validated/fragments/fragments.shp``
@@ -172,8 +181,10 @@ How to Choose a Surface
 3. Choose one of ``intensive_light``, ``intensive_moderate``, or
    ``intensive_heavy`` when the class exercise needs the full
    ``PCT -> CT -> F1 -> F2 -> F3`` scaffold on one launchable K3Z surface.
-4. Choose one of ``pct_light``, ``pct_moderate``, or ``pct_heavy`` when
-   the class exercise needs PCT intensity comparison without CT or fertilization.
+4. Choose one of ``pct_light``, ``pct_moderate``, ``pct_heavy``, or
+   ``pct_heavy_zones`` when the class exercise needs PCT intensity comparison
+   without CT or fertilization. Use ``pct_heavy_zones`` specifically when the
+   alternate Bianca zone-group surface is part of the teaching question.
 5. Choose ``intensive_light_standstructure`` only when you are explicitly
    validating the first optional BTC stand-structure bank or extending that
    proving-ground pattern; it is not the default teaching surface for current
