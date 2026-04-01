@@ -480,6 +480,15 @@ Troubleshooting Workflow
 5. On the selected ``pct_*`` subvariant, confirm the matching
    ``config/silviculture.k3z.pct_*.yaml`` matches the expected treatment-path
    build and that the corresponding ``tracks_pct_*`` surface is active.
+6. On ``pct_heavy_zones``, the default account surface now includes a small
+   set of summary gross-revenue rollups even when the full log-grade teaching
+   family is off:
+   - ``product.Logs_Grade_Value_Total.managed.CW.CC``
+   - ``product.Logs_Grade_Value_Total.managed.FDC.CC``
+   - ``product.Logs_Grade_Value_Total.managed.HW.CC``
+   - ``product.Logs_Grade_Value_Total.managed.PLC.CC``
+   - ``product.Logs_Grade_Value_Total.managed.YC.CC``
+   - ``product.Logs_Grade_Value_Total.managed.Total.CC``
 
 Release Checklist
 -----------------

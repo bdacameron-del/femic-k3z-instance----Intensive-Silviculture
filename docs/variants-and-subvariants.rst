@@ -258,6 +258,32 @@ primary BTC output. Instead, FEMIC:
 That is a modeled teaching surface, but it is intentionally auditable and
 user-tweakable through the FEMIC recipe/overlay contract.
 
+`pct_heavy_zones` Revenue Rollups
+---------------------------------
+
+The ``pct_heavy_zones`` sibling variant also ships a small set of simpler
+gross-revenue rollups on top of the fine-grained log-grade value surface.
+
+These summary accounts are available even when the full log-grade teaching
+surface stays off by default:
+
+- ``product.Logs_Grade_Value_Total.managed.CW.CC``
+- ``product.Logs_Grade_Value_Total.managed.FDC.CC``
+- ``product.Logs_Grade_Value_Total.managed.HW.CC``
+- ``product.Logs_Grade_Value_Total.managed.PLC.CC``
+- ``product.Logs_Grade_Value_Total.managed.YC.CC``
+- ``product.Logs_Grade_Value_Total.managed.Total.CC``
+
+Interpretation:
+
+- the species accounts sum all existing ``D/F/H/I/J/U/X/Y`` value rows for
+  that species across the zoned ``pct_heavy_zones`` surface;
+- the ``Total`` account sums all shipped species subtotal rows into one global
+  gross-revenue teaching account for clearcut harvest.
+
+These accounts are intended as the easy-entry student surface. Turn on the full
+log-grade account family only when you want the AU/species/log-grade detail.
+
 Audit Checklist
 ---------------
 
