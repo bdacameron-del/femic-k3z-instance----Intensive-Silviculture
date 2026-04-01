@@ -61,6 +61,7 @@ if (useRoutes) {
 int Patchworks_TargetInit() {
    control.calculateGroups("AU");
    control.calculateGroups("IFM");
+   control.calculateGroups("GROUP");
    setupYieldFlowTargets(control, periods, tracks_path_prefix);
    setupHarvestedQmdRatioAccounts(control, tracks_path_prefix);
    validateSeralStageAttributes();
