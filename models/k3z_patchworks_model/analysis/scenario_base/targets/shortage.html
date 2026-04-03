@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Active target shortage summary, scenario_base scenario</title>
+<link rel="icon" href="../html/sps.ico">
+<script src="../html/jquery-3.4.1.min.js"></script>
+<script src="../html/jquery-ui-1.12.1.custom.min.js"></script>
+<link href="../html/smoothness/jquery-ui-1.12.1.custom.css" type="text/css" rel="stylesheet">
+<script src="../html/pw.js"></script>
+<link href="../html/pw.css" type="text/css" rel="stylesheet">
+</head>
+<body onLoad="windowTitle('Active target shortage summary, scenario_base scenario')">
+<script>header('../')</script>
+<div class="mainContent">
+<h2 class="title">Active target shortage summary, scenario_base scenario</h2>
+
+<table border="1" cellspacing="0" class="dataTable">
+<tr><th>Target</th><th>Period 1</th><th>Period 2</th><th>Period 3</th><th>Period 4</th><th>Period 5</th><th>Period 6</th><th>Period 7</th><th>Period 8</th><th>Period 9</th><th>Period 10</th><th>Period 11</th><th>Period 12</th><th>Period 13</th><th>Period 14</th><th>Period 15</th><th>Period 16</th><th>Period 17</th><th>Period 18</th><th>Period 19</th><th>Period 20</th><th>Period 21</th><th>Period 22</th><th>Period 23</th><th>Period 24</th><th>Period 25</th><th>Period 26</th><th>Period 27</th><th>Period 28</th><th>Period 29</th><th>Period 30</th><th>Total</th></tr>
+<tbody style="text-align:right;">
+<tr><td><a href="flow_even_product_Yield_managed_Total.html">flow.even.product.Yield.managed.Total</a></td>
+<td>0.12200000137090683</td><td>0.10000000149011612</td><td>0.13199999928474426</td><td>0.11999999731779099</td><td>0.13500000536441803</td><td>0.07999999821186066</td><td>0.10499999672174454</td><td>0.017000000923871994</td><td>0.11900000274181366</td><td>0.07400000095367432</td><td>0.05999999865889549</td><td>0.10700000077486038</td><td>0.12999999523162842</td><td>0.09200000017881393</td><td>0.004999999888241291</td><td>0.052000001072883606</td><td>0.09799999743700027</td><td>0.0</td><td>0.0430000014603138</td><td>0.10199999809265137</td><td>0.09799999743700027</td><td>0.057999998331069946</td><td>0.09700000286102295</td><td>0.0689999982714653</td><td>0.014000000432133675</td><td>0.00800000037997961</td><td>0.007000000216066837</td><td>0.023000000044703484</td><td>0.020999999716877937</td><td>0.0</td><td>2.08799999486655</td></tr>
+<tr><td><a href="product_Treated_managed_CT.html">product.Treated.managed.CT</a></td>
+<td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td><a href="product_Yield_managed_Total.html">product.Yield.managed.Total</a></td>
+<td>119.359375</td><td>99.4453125</td><td>128.65625</td><td>117.6875</td><td>130.8828125</td><td>81.234375</td><td>103.765625</td><td>6.3828125</td><td>116.9140625</td><td>75.765625</td><td>63.546875</td><td>106.0078125</td><td>126.390625</td><td>92.2421875</td><td>13.921875</td><td>56.484375</td><td>98.0078125</td><td>9.078125</td><td>48.0625</td><td>101.046875</td><td>97.4765625</td><td>61.9296875</td><td>96.65625</td><td>71.6953125</td><td>21.6171875</td><td>1.3984375</td><td>15.8046875</td><td>29.75</td><td>28.6015625</td><td>8.984375</td><td>2128.796875</td></tr>
+</tbody></table>
+<p>
+<div class="extraHtml">
+<p>Values represent a shortfall below (above) a minimum (maximum) target value.
+</div>
+<br>
+</div> <!-- end of mainContent -->
+<div class="csvLink noprint">
+<br/><a href="shortage.csv?scenario=scenario_base+scenario">Download data file in CSV format</a>
+</div>
+<div class="indexLink noprint">
+<br/><a href="index.html">Return to the index</a>
+</div>
+
+<script>
+$(document).ready(function() {
+  var shower, hider;
+  shower = function() {
+    $("#paramList").show();
+    $("#paramButton span.ui-icon").removeClass("ui-icon-triangle-1-e").addClass("ui-icon-triangle-1-s");
+    $("#paramButton").on("click", hider);
+    document.getElementById('paramList').scrollIntoView();
+   }
+   hider = function() {
+    $("#paramButton span.ui-icon").removeClass("ui-icon-triangle-1-s").addClass("ui-icon-triangle-1-e");
+    $("#paramList").hide();
+    $("#paramButton").on("click", shower);
+  }
+  $("#paramButton").on("click", shower);
+});
+</script>
+
+<br/><a class="noprint" id="paramButton" style="text-decoration: none;"><span class="ui-icon ui-icon-triangle-1-e" style="float: left;"></span>Report parameters</a>
+<table border="1" cellspacing="0" class="reportParams noprint" id="paramList" style="display: none">
+<tr><th>Report type</th><td>Shortage Report</td></tr>
+<tr><th>Column</th><td>SHORTAGE</td></tr>
+</table>
+
+<hr /><div class="footer">Spatial Planning Systems, generated on April 3, 2026, 12:53 AM (303)</div>
+
