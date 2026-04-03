@@ -170,6 +170,9 @@ Variant review points:
   ``J/U/X/Y`` material to reflect early-age thinning from below. This is a
   teaching-instance bridge between forest-growth and product-outturn logic, not
   a claim that FEMIC directly observes CT log grades in primary BTC output.
+- Users can now narrow a ``CC`` override to an exact current-rotation state
+  such as ``cc_pl_ct`` in the recipe overlay if they want post-CT ``CC`` to
+  carry a different log-grade mix than baseline ``cc_pl``.
 - The shipped value side uses FEMIC-owned coast-market reference matrices under
   ``src/femic/resources/patchworks/log_grade_price_matrices.yaml``.
 - Managed / treatment-driven harvest defaults to the
