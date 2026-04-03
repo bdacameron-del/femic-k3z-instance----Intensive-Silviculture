@@ -117,7 +117,7 @@ lineage_chain:
       - models/k3z_patchworks_model/tracks/accounts.csv
 
 provenance_policy:
-  - use run-scoped manifests and logs in vdyp_io/logs for each rebuild
+  - use run-scoped manifests and logs in runtime/logs for each rebuild
   - update this registry whenever input paths, commands, or model structure changes
   - do not hand-edit generated artifacts; regenerate from upstream inputs
   - update roadmap detailed notes and changelog in the same milestone as lineage edits

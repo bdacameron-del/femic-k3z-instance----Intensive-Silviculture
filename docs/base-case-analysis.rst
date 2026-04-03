@@ -14,8 +14,8 @@ Base-case interpretation for K3Z should include:
 Primary evidence sources:
 
 - ``models/k3z_patchworks_model/tracks/*.csv``
-- ``vdyp_io/logs/patchworks_matrixbuilder_manifest-*.json``
-- run-id-specific matrix logs and manifests under ``vdyp_io/logs/``
+- ``runtime/logs/patchworks_matrixbuilder_manifest-*.json``
+- run-id-specific matrix logs and manifests under ``runtime/logs/``
 - :doc:`yield-curve-comparisons` for the student-facing treated TIPSY-vs-VDYP
   figure set
 - Appendix figure catalog in :ref:`k3z-figure-appendix`
@@ -119,7 +119,7 @@ Provenance Table
      - Verified by invariant tests
    * - Rebuild evidence
      - Per run-id
-     - ``vdyp_io/logs/``
+     - ``runtime/logs/``
      - reproducibility script
      - Verified by report pass/fail flags
 
