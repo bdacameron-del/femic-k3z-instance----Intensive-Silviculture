@@ -49,9 +49,9 @@ Outputs
 -------
 
 - Rebuild report:
-  ``vdyp_io/logs/instance_rebuild_report-<run_id>.json``
+  ``runtime/logs/instance_rebuild_report-<run_id>.json``
 - Matrix logs:
-  ``vdyp_io/logs/patchworks_matrixbuilder_{stdout,stderr,manifest}-<run_id>.log``
+  ``runtime/logs/patchworks_matrixbuilder_{stdout,stderr,manifest}-<run_id>.log``
 
 Key Invariants
 --------------

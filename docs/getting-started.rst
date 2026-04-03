@@ -293,7 +293,8 @@ Authoritative Paths
 - PCT-only heavy tracks:
   ``models/k3z_patchworks_model/tracks_pct_heavy/``
 - Runtime logs/manifests:
-  ``vdyp_io/logs/``
+  ``runtime/logs/`` for non-VDYP manifests/reports and ``vdyp_io/logs/`` for
+  VDYP-specific logs
 
 Baseline K3Z Policy Notes
 -------------------------

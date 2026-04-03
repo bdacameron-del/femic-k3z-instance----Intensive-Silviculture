@@ -31,7 +31,8 @@ how they are produced.
      - validation stage outputs
      - matrix build manifests + startup checks
    * - Rebuild evidence
-     - ``vdyp_io/logs/``
+     - ``runtime/logs/`` for non-VDYP manifests/reports
+     - ``vdyp_io/logs/`` for VDYP-specific logs
      - run-id workflow + matrix build
      - manifest/log timestamps + command status
 
@@ -46,7 +47,7 @@ Build-Lineage Chain
 Validation Evidence
 -------------------
 
-- Matrix builder manifests: ``vdyp_io/logs/patchworks_matrixbuilder_manifest-*.json``
+- Matrix builder manifests: ``runtime/logs/patchworks_matrixbuilder_manifest-*.json``
 - Patchworks runtime startup/load checks using ``analysis/base.pin``.
 
 Provenance Versioning Policy

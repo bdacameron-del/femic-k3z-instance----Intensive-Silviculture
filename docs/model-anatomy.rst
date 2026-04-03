@@ -12,8 +12,9 @@ Directory Map
 - ``models/k3z_patchworks_model/``: curated Patchworks model package.
 - ``output/``: validated export products from FEMIC stages.
 - ``plots/``: QA and interpretation figures for strata/curves/overlays.
-- ``vdyp_io/logs/``: reproducibility artifacts (manifests, matrix logs,
+- ``runtime/logs/``: non-VDYP reproducibility artifacts (manifests, matrix logs,
   reports).
+- ``vdyp_io/logs/``: VDYP-specific event and stdout logs.
 
 Generated vs Editable
 ---------------------

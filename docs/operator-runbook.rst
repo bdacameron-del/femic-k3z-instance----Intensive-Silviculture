@@ -66,7 +66,7 @@ continue" step from local rebuilds.
 
 Review:
 
-- ``vdyp_io/logs/patchworks_matrixbuilder_manifest-<run_id>.json``
+- ``runtime/logs/patchworks_matrixbuilder_manifest-<run_id>.json``
 
 Runtime account assumptions
 ---------------------------
@@ -417,13 +417,13 @@ Variant review points:
   Then inspect:
 
   - by default, FEMIC saves the headless stage under
-    ``vdyp_io/logs/headless_stage/<run_id>/`` so report exports stay out of the
+    ``runtime/logs/headless_stage/<run_id>/`` so report exports stay out of the
     tracked ``analysis/`` tree; override with ``--stage-label`` only when a
     different save location is intentional
-  - ``vdyp_io/logs/headless_stage/<run_id>/scenario/{targetStatus,targetSummary,schedule}.csv``
-  - ``vdyp_io/logs/headless_stage/<run_id>/targets/feature_QMD_managed_*.csv``
-  - ``vdyp_io/logs/headless_stage/<run_id>/targets/product_QMD_managed_*.csv``
-  - ``vdyp_io/logs/headless_stage/<run_id>/targets/product_QMDNumerator_managed_*.csv``
+  - ``runtime/logs/headless_stage/<run_id>/scenario/{targetStatus,targetSummary,schedule}.csv``
+  - ``runtime/logs/headless_stage/<run_id>/targets/feature_QMD_managed_*.csv``
+  - ``runtime/logs/headless_stage/<run_id>/targets/product_QMD_managed_*.csv``
+  - ``runtime/logs/headless_stage/<run_id>/targets/product_QMDNumerator_managed_*.csv``
 
 Baseline Overlay Subvariant Workflow
 ------------------------------------
