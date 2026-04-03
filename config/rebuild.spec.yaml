@@ -8,7 +8,7 @@ runtime:
   run_config: "config/run_profile.k3z.yaml"
   tipsy_config_dir: "config/tipsy"
   patchworks_config: "config/patchworks.runtime.windows.yaml"
-  log_dir: "vdyp_io/logs"
+  log_dir: "runtime/logs"
   species_account_policy:
     required_present:
       - "product.Yield.managed.PLC"
@@ -45,7 +45,7 @@ steps:
       - "geospatial_preflight"
     mutable_artifacts:
       - "data/*"
-      - "vdyp_io/logs/*"
+      - "runtime/logs/*"
     expected_outputs:
       - "run_manifest-<run_id>.json"
 
@@ -57,7 +57,7 @@ steps:
       - "compile_upstream"
     mutable_artifacts:
       - "data/model_input_bundle/*"
-      - "vdyp_io/logs/*"
+      - "runtime/logs/*"
     expected_outputs:
       - "post-tipsy manifest and bundle tables"
 
@@ -91,7 +91,7 @@ steps:
       - "patchworks_build_blocks"
     mutable_artifacts:
       - "models/k3z_patchworks_model/tracks/*"
-      - "vdyp_io/logs/patchworks_matrixbuilder_*"
+      - "runtime/logs/patchworks_matrixbuilder_*"
     expected_outputs:
       - "patchworks_matrixbuilder_manifest-<run_id>.json"
 
