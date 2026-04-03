@@ -30,7 +30,7 @@ boolean usePatches = false;
  * default. Set true when you explicitly want the full log-grade volume and
  * value bridge in the Patchworks UI.
  */
-boolean enableLogGradeAccounts = false;
+boolean enableLogGradeAccounts = true;
 
 sourceRelative("../scripts/targets/flowTargets.bsh");
 sourceRelative("../scripts/targets/qmdRatioAccounts.bsh");
@@ -98,7 +98,8 @@ int Patchworks_TargetInit() {
    */
    control.calculateGroups("AU");
    control.calculateGroups("IFM");
-
+   control.inputGroups("../tracks_ctfert_l20h0/groups.csv");
+   control.inputGroups("../tracks_ctfert_l20h0/groups_ctfert_au.csv");
    setupYieldFlowTargets(control, periods, tracks_path_prefix);
    setupHarvestedQmdRatioAccounts(control, tracks_path_prefix);
    validateSeralStageAttributes();
