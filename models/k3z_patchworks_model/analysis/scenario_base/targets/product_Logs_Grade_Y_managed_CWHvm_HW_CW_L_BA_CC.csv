@@ -1,6 +1,6 @@
 TARGET,PERIOD,YEAR,PERIODWIDTH,MINIMUM,MAXIMUM,MINWEIGHT,MAXWEIGHT,CURRENT,SUMMARY
 product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,0,0,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,1,10,10.0,0.0,10000.0,1.0,1.0,0.007000000216066837,0.0
+product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,1,10,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,2,20,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,3,30,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,4,40,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
@@ -9,12 +9,12 @@ product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,6,60,10.0,0.0,10000.0,1.0,1.0,0
 product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,7,70,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,8,80,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,9,90,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,10,100,10.0,0.0,10000.0,1.0,1.0,0.7979999780654907,0.0
+product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,10,100,10.0,0.0,10000.0,1.0,1.0,0.3700000047683716,0.0
 product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,11,110,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,12,120,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
+product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,12,120,10.0,0.0,10000.0,1.0,1.0,0.09099999815225601,0.0
 product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,13,130,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,14,140,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,15,150,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
+product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,15,150,10.0,0.0,10000.0,1.0,1.0,0.2329999953508377,0.0
 product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,16,160,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,17,170,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,18,180,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
@@ -26,7 +26,7 @@ product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,23,230,10.0,0.0,10000.0,1.0,1.0
 product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,24,240,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,25,250,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,26,260,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,27,270,10.0,0.0,10000.0,1.0,1.0,0.16300000250339508,0.0
+product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,27,270,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,28,280,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,29,290,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Logs_Grade_Y.managed.CWHvm_HW_CW_L.BA.CC,30,300,10.0,0.0,10000.0,1.0,1.0,0.0,0.0

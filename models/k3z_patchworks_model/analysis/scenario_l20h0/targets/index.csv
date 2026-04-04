@@ -255,6 +255,9 @@ product_HarvestedVolume_managed_Total_CC,Targets for product.HarvestedVolume.man
 product_HarvestedVolume_managed_Total_CT,Targets for product.HarvestedVolume.managed.Total.CT,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 product_HarvestedVolume_managed_YC_CC,Targets for product.HarvestedVolume.managed.YC.CC,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 product_HarvestedVolume_managed_YC_CT,Targets for product.HarvestedVolume.managed.YC.CT,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
+product_HarvestedVolume_managed_ctfert_au_Total,Targets for product.HarvestedVolume.managed.ctfert_au.Total,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
+product_HarvestedVolume_managed_ctfert_au_Total_CC,Targets for product.HarvestedVolume.managed.ctfert_au.Total.CC,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
+product_HarvestedVolume_managed_ctfert_au_Total_CT,Targets for product.HarvestedVolume.managed.ctfert_au.Total.CT,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 product_Logs_Grade_D_managed_CWHvm_CW_HW_M_BA_CC,Targets for product.Logs_Grade_D.managed.CWHvm_CW_HW_M.BA.CC,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 product_Logs_Grade_D_managed_CWHvm_CW_HW_M_BA_CT,Targets for product.Logs_Grade_D.managed.CWHvm_CW_HW_M.BA.CT,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 product_Logs_Grade_D_managed_CWHvm_CW_HW_M_CW_CC,Targets for product.Logs_Grade_D.managed.CWHvm_CW_HW_M.CW.CC,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
@@ -1357,6 +1360,8 @@ product_Logs_Grade_Value_Y_managed_CWHvm_HW_FDC_L_HW_CC,Targets for product.Logs
 product_Logs_Grade_Value_Y_managed_CWHvm_HW_SS_M_CW_CC,Targets for product.Logs_Grade_Value_Y.managed.CWHvm_HW_SS_M.CW.CC,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 product_Logs_Grade_Value_Y_managed_CWHvm_HW_SS_M_FDC_CC,Targets for product.Logs_Grade_Value_Y.managed.CWHvm_HW_SS_M.FDC.CC,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 product_Logs_Grade_Value_Y_managed_CWHvm_HW_SS_M_HW_CC,Targets for product.Logs_Grade_Value_Y.managed.CWHvm_HW_SS_M.HW.CC,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
+product_Logs_Grade_X_cc_au_managed_Total_CC,Targets for product.Logs_Grade_X.cc_au.managed.Total.CC,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
+product_Logs_Grade_X_ctfert_au_managed_Total_CC,Targets for product.Logs_Grade_X.ctfert_au.managed.Total.CC,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 product_Logs_Grade_X_managed_CWHvm_CW_HW_M_BA_CC,Targets for product.Logs_Grade_X.managed.CWHvm_CW_HW_M.BA.CC,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 product_Logs_Grade_X_managed_CWHvm_CW_HW_M_BA_CT,Targets for product.Logs_Grade_X.managed.CWHvm_CW_HW_M.BA.CT,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 product_Logs_Grade_X_managed_CWHvm_CW_HW_M_CW_CC,Targets for product.Logs_Grade_X.managed.CWHvm_CW_HW_M.CW.CC,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
@@ -1462,6 +1467,8 @@ product_Logs_Grade_X_managed_CWHvm_HW_SS_M_HW_CC,Targets for product.Logs_Grade_
 product_Logs_Grade_X_managed_CWHvm_HW_SS_M_SS_CC,Targets for product.Logs_Grade_X.managed.CWHvm_HW_SS_M.SS.CC,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 product_Logs_Grade_X_managed_Total_CC,Targets for product.Logs_Grade_X.managed.Total.CC,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 product_Logs_Grade_X_managed_Total_CT,Targets for product.Logs_Grade_X.managed.Total.CT,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
+product_Logs_Grade_Y_cc_au_managed_Total_CC,Targets for product.Logs_Grade_Y.cc_au.managed.Total.CC,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
+product_Logs_Grade_Y_ctfert_au_managed_Total_CC,Targets for product.Logs_Grade_Y.ctfert_au.managed.Total.CC,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 product_Logs_Grade_Y_managed_CWHvm_CW_HW_M_BA_CC,Targets for product.Logs_Grade_Y.managed.CWHvm_CW_HW_M.BA.CC,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 product_Logs_Grade_Y_managed_CWHvm_CW_HW_M_BA_CT,Targets for product.Logs_Grade_Y.managed.CWHvm_CW_HW_M.BA.CT,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 product_Logs_Grade_Y_managed_CWHvm_CW_HW_M_CW_CC,Targets for product.Logs_Grade_Y.managed.CWHvm_CW_HW_M.CW.CC,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
@@ -1689,6 +1696,8 @@ product_Treated_managed_CWHvm_HW_SS_M_CC,Targets for product.Treated.managed.CWH
 product_Treated_managed_F1,Targets for product.Treated.managed.F1,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 product_Treated_managed_F2,Targets for product.Treated.managed.F2,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 product_Treated_managed_F3,Targets for product.Treated.managed.F3,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
+product_Treated_managed_ctfert_au_CC,Targets for product.Treated.managed.ctfert_au.CC,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
+product_Treated_managed_ctfert_au_CT,Targets for product.Treated.managed.ctfert_au.CT,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 product_Yield_managed_BA,Targets for product.Yield.managed.BA,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 product_Yield_managed_CW,Targets for product.Yield.managed.CW,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png
 product_Yield_managed_DR,Targets for product.Yield.managed.DR,ca.spatial.reportwriter.TargetLimitReport,Target table,html;csv;png

@@ -207,7 +207,7 @@ feature.Yield.managed.FDC,31,false,false,false,1.0,false,false
 feature.Yield.managed.HW,31,false,false,false,1.0,false,false
 feature.Yield.managed.PLC,31,false,false,false,1.0,false,false
 feature.Yield.managed.SS,31,false,false,false,1.0,false,false
-feature.Yield.managed.Total,31,false,true,false,1.0,true,false
+feature.Yield.managed.Total,31,true,true,false,1.0,true,false
 feature.Yield.managed.YC,31,false,false,false,1.0,false,false
 feature.Yield.unmanaged.BA,31,false,false,false,1.0,false,false
 feature.Yield.unmanaged.CW,31,false,false,false,1.0,false,false
@@ -234,7 +234,7 @@ flow.ndy.feature.Yield.managed.FDC,31,false,false,false,1.0,false,false
 flow.ndy.feature.Yield.managed.HW,31,false,false,false,1.0,false,false
 flow.ndy.feature.Yield.managed.PLC,31,false,false,false,1.0,false,false
 flow.ndy.feature.Yield.managed.SS,31,false,false,false,1.0,false,false
-flow.ndy.feature.Yield.managed.Total,31,false,true,true,1.0,true,false
+flow.ndy.feature.Yield.managed.Total,31,false,false,false,1.0,false,false
 flow.ndy.feature.Yield.managed.YC,31,false,false,false,1.0,false,false
 product.HarvestedVolume.managed.BA.CC,31,false,false,false,1.0,false,false
 product.HarvestedVolume.managed.BA.CT,31,false,false,false,1.0,false,false
@@ -253,6 +253,9 @@ product.HarvestedVolume.managed.Total.CC,31,false,false,false,1.0,false,false
 product.HarvestedVolume.managed.Total.CT,31,false,false,false,1.0,false,false
 product.HarvestedVolume.managed.YC.CC,31,false,false,false,1.0,false,false
 product.HarvestedVolume.managed.YC.CT,31,false,false,false,1.0,false,false
+product.HarvestedVolume.managed.ctfert_au.Total.CC,31,false,false,false,1.0,false,false
+product.HarvestedVolume.managed.ctfert_au.Total.CT,31,false,false,false,1.0,false,false
+product.HarvestedVolume.managed.ctfert_au.Total,31,false,false,false,1.0,false,false
 product.Logs_Grade_D.managed.CWHvm_CW_HW_M.BA.CC,31,false,false,false,1.0,false,false
 product.Logs_Grade_D.managed.CWHvm_CW_HW_M.BA.CT,31,false,false,false,1.0,false,false
 product.Logs_Grade_D.managed.CWHvm_CW_HW_M.CW.CC,31,false,false,false,1.0,false,false
@@ -1355,6 +1358,8 @@ product.Logs_Grade_Value_Y.managed.CWHvm_HW_FDC_L.HW.CC,31,false,false,false,1.0
 product.Logs_Grade_Value_Y.managed.CWHvm_HW_SS_M.CW.CC,31,false,false,false,1.0,false,false
 product.Logs_Grade_Value_Y.managed.CWHvm_HW_SS_M.FDC.CC,31,false,false,false,1.0,false,false
 product.Logs_Grade_Value_Y.managed.CWHvm_HW_SS_M.HW.CC,31,false,false,false,1.0,false,false
+product.Logs_Grade_X.cc_au.managed.Total.CC,31,false,false,false,1.0,false,false
+product.Logs_Grade_X.ctfert_au.managed.Total.CC,31,false,false,false,1.0,false,false
 product.Logs_Grade_X.managed.CWHvm_CW_HW_M.BA.CC,31,false,false,false,1.0,false,false
 product.Logs_Grade_X.managed.CWHvm_CW_HW_M.BA.CT,31,false,false,false,1.0,false,false
 product.Logs_Grade_X.managed.CWHvm_CW_HW_M.CW.CC,31,false,false,false,1.0,false,false
@@ -1460,6 +1465,8 @@ product.Logs_Grade_X.managed.CWHvm_HW_SS_M.HW.CC,31,false,false,false,1.0,false,
 product.Logs_Grade_X.managed.CWHvm_HW_SS_M.SS.CC,31,false,false,false,1.0,false,false
 product.Logs_Grade_X.managed.Total.CC,31,false,false,false,1.0,false,false
 product.Logs_Grade_X.managed.Total.CT,31,false,false,false,1.0,false,false
+product.Logs_Grade_Y.cc_au.managed.Total.CC,31,false,false,false,1.0,false,false
+product.Logs_Grade_Y.ctfert_au.managed.Total.CC,31,false,false,false,1.0,false,false
 product.Logs_Grade_Y.managed.CWHvm_CW_HW_M.BA.CC,31,false,false,false,1.0,false,false
 product.Logs_Grade_Y.managed.CWHvm_CW_HW_M.BA.CT,31,false,false,false,1.0,false,false
 product.Logs_Grade_Y.managed.CWHvm_CW_HW_M.CW.CC,31,false,false,false,1.0,false,false
@@ -1682,6 +1689,8 @@ product.Treated.managed.CWHvm_HW_CW_M.CC,31,false,false,false,1.0,false,false
 product.Treated.managed.CWHvm_HW_FDC_H.CC,31,false,false,false,1.0,false,false
 product.Treated.managed.CWHvm_HW_FDC_L.CC,31,false,false,false,1.0,false,false
 product.Treated.managed.CWHvm_HW_SS_M.CC,31,false,false,false,1.0,false,false
+product.Treated.managed.ctfert_au.CC,31,false,false,false,1.0,false,false
+product.Treated.managed.ctfert_au.CT,31,false,false,false,1.0,false,false
 product.Treated.managed.CC,31,false,false,false,1.0,false,false
 product.Treated.managed.CT,31,true,false,true,1.0,false,false
 product.Treated.managed.F1,31,false,false,false,1.0,false,false
@@ -1694,5 +1703,5 @@ product.Yield.managed.FDC,31,false,false,false,1.0,false,false
 product.Yield.managed.HW,31,false,false,false,1.0,false,false
 product.Yield.managed.PLC,31,false,false,false,1.0,false,false
 product.Yield.managed.SS,31,false,false,false,1.0,false,false
-product.Yield.managed.Total,31,true,true,true,1.0,false,false
+product.Yield.managed.Total,31,true,true,true,1.0,true,false
 product.Yield.managed.YC,31,false,false,false,1.0,false,false
