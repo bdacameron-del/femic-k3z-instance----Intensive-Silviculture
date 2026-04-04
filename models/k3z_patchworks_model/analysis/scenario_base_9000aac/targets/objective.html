@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Active target objective summary, scenario_base scenario</title>
+<link rel="icon" href="../html/sps.ico">
+<script src="../html/jquery-3.4.1.min.js"></script>
+<script src="../html/jquery-ui-1.12.1.custom.min.js"></script>
+<link href="../html/smoothness/jquery-ui-1.12.1.custom.css" type="text/css" rel="stylesheet">
+<script src="../html/pw.js"></script>
+<link href="../html/pw.css" type="text/css" rel="stylesheet">
+</head>
+<body onLoad="windowTitle('Active target objective summary, scenario_base scenario')">
+<script>header('../')</script>
+<div class="mainContent">
+<h2 class="title">Active target objective summary, scenario_base scenario</h2>
+
+<table border="1" cellspacing="0" class="dataTable">
+<tr><th>Target</th><th>Period 1</th><th>Period 2</th><th>Period 3</th><th>Period 4</th><th>Period 5</th><th>Period 6</th><th>Period 7</th><th>Period 8</th><th>Period 9</th><th>Period 10</th><th>Period 11</th><th>Period 12</th><th>Period 13</th><th>Period 14</th><th>Period 15</th><th>Period 16</th><th>Period 17</th><th>Period 18</th><th>Period 19</th><th>Period 20</th><th>Period 21</th><th>Period 22</th><th>Period 23</th><th>Period 24</th><th>Period 25</th><th>Period 26</th><th>Period 27</th><th>Period 28</th><th>Period 29</th><th>Period 30</th><th>Total</th></tr>
+<tbody style="text-align:right;">
+<tr><td><a href="flow_even_product_Yield_managed_Total.html">flow.even.product.Yield.managed.Total</a></td>
+<td>0.18490000000000004</td><td>0.43560000000000004</td><td>0.19359999999999997</td><td>0.01</td><td>0.09609999999999999</td><td>0.01</td><td>0.012099999999999998</td><td>0.0361</td><td>2.1903999999999995</td><td>1.1448999999999998</td><td>0.4489000000000001</td><td>1.1448999999999998</td><td>0.04410000000000001</td><td>0.3721</td><td>0.0576</td><td>0.6084</td><td>0.0063999999999999994</td><td>0.12250000000000001</td><td>0.29159999999999997</td><td>1.2544000000000002</td><td>1.9881000000000002</td><td>0.5328999999999999</td><td>0.5929</td><td>0.04</td><td>0.08410000000000001</td><td>0.06760000000000002</td><td>0.0036</td><td>0.019600000000000003</td><td>0.24010000000000004</td><td>0.0</td><td>12.2335</td></tr>
+<tr><td><a href="product_Treated_managed_CT.html">product.Treated.managed.CT</a></td>
+<td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td><a href="product_Yield_managed_Total.html">product.Yield.managed.Total</a></td>
+<td>1.9820979369E8</td><td>1.4411042116000003E8</td><td>1.95832036E8</td><td>2.9216723041E8</td><td>2.3085763599999997E8</td><td>2.9001068209E8</td><td>2.8839511684000003E8</td><td>3.9017705840999997E8</td><td>2.1879006249999996E7</td><td>6.961566096000001E7</td><td>1.4318994244000003E8</td><td>7.655624934399999E8</td><td>2.5837990563999996E8</td><td>1.5541611556E8</td><td>2.4987705625000006E8</td><td>6.294278145600001E8</td><td>3.5032983240999997E8</td><td>2.1902224035999998E8</td><td>5.2350355204E8</td><td>7.877789427599999E8</td><td>9.430242556899999E8</td><td>6.0395520025E8</td><td>1.2183523641000001E8</td><td>2.6156916360999998E8</td><td>2.3560408036E8</td><td>4.1680080649E8</td><td>3.4655173280999994E8</td><td>2.7764890384000003E8</td><td>1.8440553615999997E8</td><td>3.2374445040999997E8</td><td>9.918881903299997E9</td></tr>
+</tbody></table>
+<p>
+<div class="extraHtml">
+<p>Contribution to the objective function by target by period.
+</div>
+<br>
+</div> <!-- end of mainContent -->
+<div class="csvLink noprint">
+<br/><a href="objective.csv?scenario=scenario_base+scenario">Download data file in CSV format</a>
+</div>
+<div class="indexLink noprint">
+<br/><a href="index.html">Return to the index</a>
+</div>
+
+<script>
+$(document).ready(function() {
+  var shower, hider;
+  shower = function() {
+    $("#paramList").show();
+    $("#paramButton span.ui-icon").removeClass("ui-icon-triangle-1-e").addClass("ui-icon-triangle-1-s");
+    $("#paramButton").on("click", hider);
+    document.getElementById('paramList').scrollIntoView();
+   }
+   hider = function() {
+    $("#paramButton span.ui-icon").removeClass("ui-icon-triangle-1-s").addClass("ui-icon-triangle-1-e");
+    $("#paramList").hide();
+    $("#paramButton").on("click", shower);
+  }
+  $("#paramButton").on("click", shower);
+});
+</script>
+
+<br/><a class="noprint" id="paramButton" style="text-decoration: none;"><span class="ui-icon ui-icon-triangle-1-e" style="float: left;"></span>Report parameters</a>
+<table border="1" cellspacing="0" class="reportParams noprint" id="paramList" style="display: none">
+<tr><th>Report type</th><td>Shortage Report</td></tr>
+<tr><th>Column</th><td>OBJECTIVE</td></tr>
+</table>
+
+<hr /><div class="footer">Spatial Planning Systems, generated on April 3, 2026, 4:51 PM (303)</div>
+

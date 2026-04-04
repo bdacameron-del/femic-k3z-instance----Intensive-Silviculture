@@ -1662,3 +1662,13 @@ ctfert_au,product.Logs_Grade_J.managed.Total.CC,product.Logs_Grade_J.ctfert_au.m
 cc_au,product.Logs_Grade_J.managed.Total.CC,product.Logs_Grade_J.cc_au.managed.Total.CC,1
 ctfert_au,product.Logs_Grade_U.managed.Total.CC,product.Logs_Grade_U.ctfert_au.managed.Total.CC,1
 cc_au,product.Logs_Grade_U.managed.Total.CC,product.Logs_Grade_U.cc_au.managed.Total.CC,1
+ctfert_au,product.Logs_Grade_X.managed.Total.CC,product.Logs_Grade_X.ctfert_au.managed.Total.CC,1
+cc_au,product.Logs_Grade_X.managed.Total.CC,product.Logs_Grade_X.cc_au.managed.Total.CC,1
+ctfert_au,product.Logs_Grade_Y.managed.Total.CC,product.Logs_Grade_Y.ctfert_au.managed.Total.CC,1
+cc_au,product.Logs_Grade_Y.managed.Total.CC,product.Logs_Grade_Y.cc_au.managed.Total.CC,1
+ctfert_au,product.HarvestedVolume.managed.Total.CT,product.HarvestedVolume.managed.ctfert_au.Total.CT,1
+ctfert_au,product.HarvestedVolume.managed.Total.CC,product.HarvestedVolume.managed.ctfert_au.Total.CC,1
+ctfert_au,product.HarvestedVolume.managed.Total.CT,product.HarvestedVolume.managed.ctfert_au.Total,1
+ctfert_au,product.HarvestedVolume.managed.Total.CC,product.HarvestedVolume.managed.ctfert_au.Total,1
+ctfert_au,product.Treated.managed.CT,product.Treated.managed.ctfert_au.CT,1
+ctfert_au,product.Treated.managed.CC,product.Treated.managed.ctfert_au.CC,1
