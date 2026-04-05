@@ -8,13 +8,13 @@ product.Treated.managed.F3,5,50,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Treated.managed.F3,6,60,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Treated.managed.F3,7,70,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Treated.managed.F3,8,80,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.Treated.managed.F3,9,90,10.0,0.0,10000.0,1.0,1.0,8.864999771118164,0.0
+product.Treated.managed.F3,9,90,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Treated.managed.F3,10,100,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Treated.managed.F3,11,110,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Treated.managed.F3,12,120,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Treated.managed.F3,13,130,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Treated.managed.F3,14,140,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.Treated.managed.F3,15,150,10.0,0.0,10000.0,1.0,1.0,10.939000129699707,0.0
+product.Treated.managed.F3,15,150,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Treated.managed.F3,16,160,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Treated.managed.F3,17,170,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Treated.managed.F3,18,180,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
@@ -28,5 +28,5 @@ product.Treated.managed.F3,25,250,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Treated.managed.F3,26,260,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Treated.managed.F3,27,270,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
 product.Treated.managed.F3,28,280,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.Treated.managed.F3,29,290,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
-product.Treated.managed.F3,30,300,10.0,0.0,10000.0,1.0,1.0,0.0,0.0
+product.Treated.managed.F3,29,290,10.0,0.0,10000.0,1.0,1.0,3.9179999828338623,0.0
+product.Treated.managed.F3,30,300,10.0,0.0,10000.0,1.0,1.0,7.257999897003174,0.0
